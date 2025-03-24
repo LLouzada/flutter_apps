@@ -129,19 +129,16 @@ sealed class Block {
 }
 
 class HeaderBlock extends Block {
-  @override
   final String text;
   HeaderBlock(this.text);
 }
 
 class ParagraphBlock extends Block {
-  @override
   final String text;
   ParagraphBlock(this.text);
 }
 
 class CheckboxBlock extends Block {
-  @override
   final String text;
   final bool isChecked;
   CheckboxBlock(this.text, this.isChecked);
